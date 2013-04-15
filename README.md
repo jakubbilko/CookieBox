@@ -29,5 +29,5 @@ hidespeed - speed of the roll up transition (in ms)
 
 autocss - when set to true, this will set some basic css for the bar (make it fixed and positioned on the top)
 
-coookiename - the name of the cookie that determines wether the bar has been shown on the site, use a unique name for
+coookiename - the name of the cookie that determines whether the bar has been shown on the site, use a unique name for
 each site
