@@ -1,7 +1,7 @@
 CookieBox
 =========
 
-A jQuery plugin for displaying fixed information bar regarding the usage of cookies on sites. Requires the jQuery
+A jQuery plugin for displaying a fixed-postion information bar regarding the usage of cookies on sites. Requires the jQuery
 Cookie Plugin to work (https://github.com/carhartl/jquery-cookie).
 
 Usage:
