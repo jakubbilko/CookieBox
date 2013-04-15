@@ -20,11 +20,14 @@
 			'cookiename': 'cookiebox'
 		}, options);
 		
+		if(!settings.visible) {
+			box.css('display', 'none');
+		}
+		
 		if(settings.autocss) {
 				box.css('position', 'fixed');
 				box.css('top', 0);
 				box.css('left', 0)
-				box.css('display', 'none');
 		}		
 		
 		if(!$.cookie(settings.cookiename)) {
