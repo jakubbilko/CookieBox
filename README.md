@@ -31,3 +31,5 @@ autocss - when set to true, this will set some basic css for the bar (make it fi
 
 coookiename - the name of the cookie that determines whether the bar has been shown on the site, use a unique name for
 each site
+
+If you want to add a close button to the bar, just add the 'cookiebox-close' class to that element (inside of the bar).
