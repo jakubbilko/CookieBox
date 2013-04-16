@@ -17,7 +17,9 @@
 			'showspeed': 1000,
 			'hidespeed': 1000,
 			'autocss': false,
-			'cookiename': 'cookiebox'
+			'cookiename': 'cookiebox',
+			'closeselector': '.cookiebox-close',
+			'transition': 'slide'
 		}, options);
 		
 		if(!settings.visible) {
@@ -31,13 +33,15 @@
 		}		
 		
 		if(!$.cookie(settings.cookiename)) {
-			this.find('.cookiebox-close').click(function(event) {
-				box.slideUp(settings.hidespeed);
+			this.find(settings.closeselector).click(function(event) {
+				if(settings.transition == 'slide') box.slideUp(settings.hidespeed);
+				else box.fadeOut(settings.hidespeed);
 				$.cookie(settings.cookiename, 'viewed');
 			});
 		
 			if(!settings.visible) { 
-				box.delay(settings.delay).slideDown(settings.showspeed);
+				if(settings.transition == 'slide') box.delay(settings.delay).slideDown(settings.showspeed);
+				else box.fadeIn(settings.showspeed);
 			}
 		}
 		
